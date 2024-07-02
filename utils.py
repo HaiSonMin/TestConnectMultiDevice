@@ -24,7 +24,7 @@ def open_appium(app_port: int):
         print(f"Error starting Appium server: {e}")
 
 
-def open_device(device_id: str, device_name: str, app_port: int = 4723):
+def connect_device(device_id: str, device_name: str, app_port: int = 4723):
     open_appium(app_port=app_port)
     desired_caps = {
         "udid": device_id,

@@ -7,3 +7,4 @@ class TypeDevice(TypedDict):
     deviceId: str
     deviceName: str
     deviceIndex: str
+
